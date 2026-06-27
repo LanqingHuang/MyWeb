@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sea ice research by Dr. Lanqing Huang.">
+    <title>Sea ice topography retrieval | Dr. Lanqing Huang</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="index.html" aria-label="MUSIC home">MUSIC</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="active" href="research.html">Projects</a>
+        <a href="dataset.html">Open Research</a>
+        <a href="publication.html">Publication</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="project-detail">
+        <a class="back-link" href="research.html">Back to projects</a>
+        <p class="section-kicker">sea ice</p>
+        <h1>Sea ice topography retrieval</h1>
+        <p class="lead">
+          This project uses satellite radar to measure the shape of sea ice: how high it
+          sits above the ocean and how rough it is.
+        </p>
+
+        <figure class="project-figure">
+          <img src="projects/seaice-thumb.jpg" alt="Sea ice surface used as the thumbnail for the sea ice project">
+        </figure>
+
+        <section>
+          <h2>Why it matters</h2>
+          <p>
+            Measuring sea ice topography over large polar regions helps scientists track
+            changes that are impossible to see from field measurements alone.
+          </p>
+        </section>
+
+        <section>
+          <h2>How we measure it</h2>
+          <p>
+            The work uses single-pass interferometric radar images (InSAR) taken from two
+            slightly different viewing positions. This makes it possible to estimate elevation,
+            similar to how two eyes give depth perception. A key challenge is that radar signals
+            can travel into snow and ice before bouncing back, so the measured height can be
+            biased. The project combines interferometry, radar polarization, and machine
+            learning to correct this bias for different ice regimes.
+          </p>
+          <figure class="project-figure inline">
+            <img src="projects/ice_type.png" alt="Sea ice regime classification used for topography retrieval">
+            <figcaption>Figure (a) Geolocation: northwestern part of the Weddell Sea, Antarctica. (b-c) Ice topography.</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2>What we learn</h2>
+          <p>
+            The results show where Antarctic sea ice is smoother or rougher, where the freeboard
+            is higher, and how ice structure changes between the Weddell and Ross seas. This
+            makes satellite radar more useful for monitoring sea ice topography and gives a
+            clearer picture of polar change for climate and ocean research. Advanced SAR
+            techniques, such as polarimetry and interferometry, provide essential information
+            about sea ice topography.
+          </p>
+          <p>
+            The results also show why more advanced algorithms are needed to retrieve reliable
+            sea ice information from SAR imagery, especially when radar signals interact with
+            snow, rough ice, and different ice regimes.
+          </p>
+          <figure class="project-figure inline">
+            <img src="projects/sea_ice_elev_result.png" alt="Sea ice elevation retrieval result">
+            <figcaption>First column: SAR imagery of sea ice. Second column: sea ice classification. Third column: sea ice freeboard (elevation from sea surface: snow+ice).</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Read more</h2>
+          <div class="read-more-list">
+            <a href="https://doi.org/10.5194/tc-18-3117-2024">
+              A study of sea ice topography in the Weddell and Ross seas using dual-polarimetric TanDEM-X imagery
+            </a>
+            <a href="https://doi.org/10.1029/2022EA002472">
+              Sea ice elevation in the Western Weddell Sea, Antarctica: Observations from field campaign
+            </a>
+            <a href="https://doi.org/10.5194/tc-15-5323-2021">
+              Antarctic snow-covered sea ice topography derivation from TanDEM-X using polarimetric SAR interferometry
+            </a>
+            <a href="https://doi.org/10.1109/JSTARS.2020.3036395">
+              Polarimetric behavior for the derivation of sea ice topographic height from TanDEM-X interferometric SAR data
+            </a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Dr. Lanqing Huang</p>
+      <a href="research.html">Projects</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

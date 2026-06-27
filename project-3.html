@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Coastal region remote-sensing research by Dr. Lanqing Huang.">
+    <title>Coastal Region | Dr. Lanqing Huang</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="index.html" aria-label="MUSIC home">MUSIC</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="active" href="research.html">Projects</a>
+        <a href="dataset.html">Open Research</a>
+        <a href="publication.html">Publication</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="project-detail">
+        <a class="back-link" href="research.html">Back to projects</a>
+        <p class="section-kicker">coastal region</p>
+        <h1>Coastal Region</h1>
+        <p class="lead">
+          This project uses satellite SAR imagery to monitor the ocean and coastal zone,
+          including storms, ship activity, and wind-driven sea-surface patterns.
+        </p>
+
+        <figure class="project-figure">
+          <img src="projects/coastal-region-thumb.png" alt="Satellite radar view of a coastal region and ships">
+        </figure>
+
+        <section>
+          <h2>Why it matters</h2>
+          <p>
+            Coastal regions are busy and vulnerable. Ships, ports, storms, winds, and coastal
+            hazards can change quickly, often under clouds or at night. Synthetic Aperture Radar
+            is useful because it can observe the ocean surface in almost all weather and provide
+            high-resolution information for monitoring and decision support.
+          </p>
+        </section>
+
+        <section>
+          <h2>How we measure it</h2>
+          <p>
+            The work studies several coastal and ocean signals in SAR imagery. Hurricane images
+            are used to map long streaks created by turbulent wind structures near the sea
+            surface.
+          </p>
+          <figure class="project-figure inline compact">
+            <img src="projects/tc.png" alt="SAR image showing tropical cyclone boundary layer roll patterns">
+            <figcaption>(a) SAR image of Hurricane Katrina 2005 acquired by ENVISAT. Subimages in Box A and B show the brush-like roll patterns. (b) 2D-FFT analysis of the subimage in Box A. The dominant wavelength is about 1,507 m and the orientation is about 196 degrees, with 180 degrees ambiguity. (c) 2D-FFT analysis of the subimage in Box B.</figcaption>
+          </figure>
+          <p>
+            OpenSARShip combines Sentinel-1 radar image with Automatic Identification System
+            (AIS) ship information so researchers can train and compare ship detection and
+            classification methods from modern SAR imagery.
+          </p>
+          <figure class="project-figure inline compact">
+            <img src="projects/ship.png" alt="OpenSARShip examples of Sentinel-1 ship interpretation">
+            <figcaption>Ship Automatic Identification System (AIS) information matched with SAR scattering images for ship detection and classification.</figcaption>
+          </figure>
+          <p>
+            Ocean-wind research examines radar speckle: the grainy texture and the speckle in
+            SAR images that can carry information about wind speed.
+          </p>
+        </section>
+
+        <section>
+          <h2>What we learn</h2>
+          <p>
+            Together, these studies show how SAR can support coastal hazard monitoring, ship
+            detection, and wind-speed retrieval. They turn complex radar textures into practical
+            information about storms, vessels, and the ocean surface, helping connect satellite
+            research with coastal applications.
+          </p>
+        </section>
+
+        <section>
+          <h2>Read more</h2>
+          <div class="read-more-list">
+            <a href="https://doi.org/10.1109/TGRS.2019.2899491">
+              SAR speckle dependence on ocean surface wind field
+            </a>
+            <a href="https://doi.org/10.1029/2018JC013755">
+              Tropical cyclone boundary layer rolls in synthetic aperture radar imagery
+            </a>
+            <a href="https://doi.org/10.1109/JSTARS.2017.2755672">
+              OpenSARShip: A dataset dedicated to Sentinel-1 ship interpretation
+            </a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Dr. Lanqing Huang</p>
+      <a href="research.html">Projects</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Snow remote-sensing research by Dr. Lanqing Huang.">
+    <title>Snow | Dr. Lanqing Huang</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="index.html" aria-label="MUSIC home">MUSIC</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="active" href="research.html">Projects</a>
+        <a href="dataset.html">Open Research</a>
+        <a href="publication.html">Publication</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="project-detail">
+        <a class="back-link" href="research.html">Back to projects</a>
+        <p class="section-kicker">snow</p>
+        <h1>Snow</h1>
+        <p class="lead">
+          This project studies how snow is distributed across sea ice and mountain glaciers,
+          and how satellites can detect snow properties from space.
+        </p>
+
+        <figure class="project-figure">
+          <img src="projects/snow-thumb.jpg" alt="Snow surface used as the thumbnail for the snow project">
+        </figure>
+
+        <section>
+          <h2>Why it matters</h2>
+          <p>
+            Snow changes how sunlight, heat, and moisture move between the atmosphere and the
+            frozen surface below. On sea ice, snow also affects estimates of ice thickness. In
+          </p>
+          <p>
+            In mountain regions, seasonal snowmelt is important for water supply. Because snow
+            can change over short distances and through time, satellites and field measurements
+            are needed together.
+          </p>
+        </section>
+
+        <section>
+          <h2>How we measure it</h2>
+          <p>
+            For sea ice, the work uses field measurements from Arctic and Antarctic campaigns
+            to describe how snow depth changes with ice age, ice thickness, flooding, and
+            weather events.
+          </p>
+          <figure class="project-figure inline">
+            <img src="projects/snowdistribution.png" alt="Snow depth distribution observations across different sea ice conditions">
+            <figcaption>(a-b) Snow depth picture from Lidar data and distribution. (c) Histograms of snow depth (SND) measured on 26 Dec 2019 and 27 Feb 2020, respectively. The log-normal distribution provides the best fit to the SND histogram at the earlier stage, on 26 Dec. After wind-driven snow redistribution, the skew distribution provides the best fit on 27 Feb.</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2>What we learn</h2>
+          <p>
+            The sea-ice work shows which statistical patterns best describe snow depth under
+            different ice conditions, helping models and satellite algorithms represent snow at
+            scales smaller than a satellite pixel.
+          </p>
+          <figure class="project-figure inline narrow">
+            <img src="projects/snowstis.png" alt="Statistical analysis of snow depth distribution on sea ice">
+            <figcaption>Boxplots of root-mean-square error (RMSE) between the fitted probability density functions (PDFs) and the snow depth (SND) observations.</figcaption>
+          </figure>
+          <p class="section-spacer">
+            For glaciers, the work combines Sentinel-1 radar images with topographic information
+            to map wet snow in the Karakoram, where steep terrain makes snow mapping difficult.
+            We proposed a new integrated snow index to map wet snow, as shown in the figure below.
+          </p>
+          <p class="section-spacer">
+            The glacier work produces seasonal wet-snow maps that reveal when and where snowmelt
+            happens, supporting water-resource and climate studies in high-mountain regions.
+          </p>
+          <figure class="project-figure inline compact">
+            <img src="projects/wetsnowmapping.png" alt="Wet snow mapping in the Karakoram using Sentinel-1 SAR and topographic data">
+            <figcaption>Detailed comparison between the snow classification map obtained using the proposed Sentinel-1 method (left column), an existing method (middle column), and the Sentinel-2 snow cover map (right column, reference).</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Read more</h2>
+          <div class="read-more-list">
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=xGE22sMAAAAJ&amp;sortby=pubdate&amp;citation_for_view=xGE22sMAAAAJ:Wp0gIr-vW9MC">
+              Snow depth distributions on sea ice of different ages and thicknesses from regional field campaigns
+            </a>
+            <a href="https://doi.org/10.5194/tc-19-1621-2025">
+              Mapping seasonal snow melting in Karakoram using SAR and topographic data
+            </a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Dr. Lanqing Huang</p>
+      <a href="research.html">Projects</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
